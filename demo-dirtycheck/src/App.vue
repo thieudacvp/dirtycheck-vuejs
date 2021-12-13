@@ -5,27 +5,25 @@
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" v-model="firstname" /><br />
             <label for="lname">Last name:</label><br />
-            <input type="text" id="lname" name="lname" v-model="lastname" />
+            <input type="text" id="lname" name="lname" v-model="lastname" /> <br />
+            <input type="checkbox" id="vehicle1" name="vehicle1" v-model="checkbox">
+            <label for="vehicle1"> I have a bike</label><br>
         </form>
     </div>
-    <!-- <div>
-            <form-1/>
-    </div> -->
   </div>
 </template>
 
 <script>
-//import form1 from './components/Form.vue'
 export default {
   name: "App",
   components: {
-//      form1
   },
 
   data() {
     return {
       firstname: null,
       lastname: null,
+      checkbox: false,
       dirtycheck: false,
     };
   },
